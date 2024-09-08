@@ -3,11 +3,11 @@ import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 import logging
-
+import token
 logging.basicConfig(level=logging.INFO)
 
 # Объект бота
-bot = Bot(token="5438302448:AAH3I_VRAM8LAqayTXvKF4y_TUiEKbr-cYw")
+bot = Bot(token=f"{token.tok}")
 # Диспетчер
 dp = Dispatcher()
 
